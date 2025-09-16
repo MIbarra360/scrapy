@@ -6,5 +6,7 @@ This is a example web scraping
 
 ### Instruction
 git clone https://github.com/MIbarra360/scrapy.git
+
 scrapy crawl webscrap
+
 see the output   <today>.json
