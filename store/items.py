@@ -26,7 +26,19 @@ class StoreItem(scrapy.Item):
     Nro=scrapy.Field(output_processor=TakeFirst())
     Description=scrapy.Field(input_processor=MapCompose(remove_tags, clean_text),output_processor=TakeFirst())
     Price=scrapy.Field(input_processor=MapCompose(remove_tags, clean_price),output_processor=TakeFirst())
+    
+class UrlItem(scrapy.Item):
+    Nro=scrapy.Field(output_processor=TakeFirst())
     Image=scrapy.Field(output_processor=TakeFirst())
     Link=scrapy.Field(output_processor=TakeFirst())
-    Socials=scrapy.Field()
+    Socials=scrapy.Field(output_processor=TakeFirst())
 
+class CacheItem(scrapy.Item):
+    #TODO
+    #cache info
+            #l.add_value('url',response.url)
+            #l.add_value('headers',response.headers)
+            #l.add_value('ip',response.ip_address)
+    url=scrapy.Field(output_processor=TakeFirst())
+    header=scrapy.Field(output_processor=TakeFirst())
+    #ipv4=scrapy.Field(output_processor=TakeFirst())
