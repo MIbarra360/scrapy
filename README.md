@@ -17,9 +17,9 @@ scrapy crawl webscrap
 
 The `data`📁 folder contains the Output
 
-###example:
+### example:
 
-** 📁 data/webscrap-20_09_2025.json**
+**📁data/webscrap-20_09_2025.json**
 
  ```json
 [
@@ -31,7 +31,7 @@ The `data`📁 folder contains the Output
 {"Nro": 6, "Description": "HMD Aura TA-1637 Dual 128 GB - Negro", "Price": 679000.0},
 ```
 
-** 📁 data/cache-20_09_2025.json**
+**📁data/cache-20_09_2025.json**
 
  ```json
 [
@@ -39,7 +39,7 @@ The `data`📁 folder contains the Output
 ]
 ```
 
-** 📁 data/urls-20_09_2025.json**
+**📁data/urls-20_09_2025.json**
 
 ```json
 [
