@@ -14,7 +14,7 @@ class webscrapSpider(scrapy.Spider):
     allowed_domains = ["nissei.com"]
     start_urls = ["https://nissei.com/py/electronica?am_on_sale=1&cat=131&p=2"]
 
-    today = date.today().strftime("%d_%m_%Y")
+    
     custom_settings = {
         "FEEDS": {
             "data/%(spider)s-%(time)s.json": {
@@ -71,4 +71,5 @@ class webscrapSpider(scrapy.Spider):
     #------ --------
         #REVIEW: 
         for link in self.link_extractor.extract_links(response):
+
             yield Request(link.url, callback=self.parse,dont_filter=True)
