@@ -1,8 +1,9 @@
 import scrapy
-from scrapy.http import Response
-from ..items import StoreItem
+from scrapy.http import Response, Request
+from ..items import StoreItem, CacheItem, UrlItem
 from datetime import date
 from scrapy.loader import ItemLoader
+from scrapy.linkextractors import LinkExtractor
 
 def uri_params(params, spider): #could bein settings
         today = date.today().strftime("%d_%m_%Y")
