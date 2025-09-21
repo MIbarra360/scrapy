@@ -5,7 +5,6 @@
 
 import scrapy
 from itemloaders.processors import MapCompose, TakeFirst
-from datetime import datetime
 from w3lib.html import remove_tags
 
 def clean_text(value):
@@ -33,12 +32,4 @@ class UrlItem(scrapy.Item):
     Link=scrapy.Field(output_processor=TakeFirst())
     Socials=scrapy.Field(output_processor=TakeFirst())
 
-class CacheItem(scrapy.Item):
-    #TODO
-    #cache info
-            #l.add_value('url',response.url)
-            #l.add_value('headers',response.headers)
-            #l.add_value('ip',response.ip_address)
-    url=scrapy.Field(output_processor=TakeFirst())
-    header=scrapy.Field(output_processor=TakeFirst())
-    #ipv4=scrapy.Field(output_processor=TakeFirst())
+
