@@ -2,8 +2,8 @@
 This is a example web scraping
 
 ## Requirements
-* Scrapy 2.13.3+ 
 * Python 3.13.1+
+* Scrapy 2.13.3+ 
 * colorama 0.4.6
 
 ## Instruction
