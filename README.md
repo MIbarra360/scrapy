@@ -9,7 +9,7 @@ This is a example web scraping
 
 ```bash
 git clone https://github.com/MIbarra360/scrapy.git
-cd scrapy-example
+cd scrapy
 pip install -r requirements.txt
 ```
 ### To run the spider:
