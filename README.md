@@ -4,12 +4,15 @@ This is a example web scraping
 ## Requirements
 * Scrapy 2.13.3+ 
 * Python 3.13.1+
+* colorama 0.4.6
 
 ## Instruction
 
 ```bash
 git clone https://github.com/MIbarra360/scrapy.git
 cd scrapy
+python3 -m venv venv
+source venv/bin/activate 
 pip install -r requirements.txt
 ```
 ### To run the spider:
